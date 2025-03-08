@@ -10,9 +10,14 @@
 
     <!-- Navbar -->
     <header>
-        <img src="https://i.postimg.cc/XNrLZHTc/239.jpg" alt="Profile Picture" class="profile-picture">
-        <h1>Bharath E</h1>
-        <p>(Student | Developer)</p>
+        <div class="profile-container">
+            <img src="https://i.postimg.cc/XNrLZHTc/239.jpg" alt="Profile Picture" class="profile-picture">
+            <div>
+                <h1>Bharath E</h1>
+                <p>Student | Developer</p>
+                <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -28,7 +33,7 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm a B.Sc Computer Science student passionate about coding, automation, and technology. I specialize in developing Telegram bots and backend automation.</p>
+            <p>I'm a passionate B.Sc Computer Science student with expertise in automation, backend development, and Telegram bot creation. I love solving problems with technology and exploring new innovations.</p>
         </div>
     </section>
 
@@ -48,12 +53,15 @@
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-list">
+                <span>Python</span>
                 <span>Redis</span>
                 <span>MongoDB</span>
-                <span>Python</span>
-                <span>HTML & CSS</span>
                 <span>PostgreSQL</span>
+                <span>HTML & CSS</span>
                 <span>C++</span>
+                <span>JavaScript</span>
+                <span>Linux</span>
+                <span>API Development</span>
             </div>
         </div>
     </section>
@@ -62,11 +70,26 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
+
             <div class="project-card">
                 <h3>Ultroid</h3>
-                <p>A stable pluggable Telegram userbot.</p>
-                <p><strong>Technologies:</strong> Python, Telethon</p>
+                <p>A powerful and stable pluggable Telegram userbot, developed with Python and Telethon.</p>
+                <p><strong>Key Features:</strong> Custom plugins, automation, easy deployment.</p>
                 <a href="https://github.com/Mega-Evolutions-3" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Automated Attendance System</h3>
+                <p>A Python-based automation tool that tracks and records attendance using facial recognition.</p>
+                <p><strong>Technologies:</strong> Python, OpenCV, SQLite</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A fully responsive personal portfolio website showcasing my skills and projects.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
         </div>
     </section>
@@ -82,7 +105,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Bharath</p>
+        <p>&copy; 2025 Bharath | Designed with ❤️</p>
     </footer>
 
     <script src="script.js"></script>
