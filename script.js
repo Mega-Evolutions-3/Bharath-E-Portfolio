@@ -1,3 +1,15 @@
+// Typing Effect
+const text = "Bharath E";
+let index = 0;
+function typeWriter() {
+    if (index < text.length) {
+        document.getElementById("typing-text").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 150);
+    }
+}
+document.addEventListener("DOMContentLoaded", typeWriter);
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function (event) {
@@ -23,3 +35,17 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Thanos Effect on Scroll
+function revealSections() {
+    let sections = document.querySelectorAll(".hidden");
+    sections.forEach(section => {
+        let sectionTop = section.getBoundingClientRect().top;
+        let windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight - 100) {
+            section.classList.add("reveal");
+        }
+    });
+}
+window.addEventListener("scroll", revealSections);
